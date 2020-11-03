@@ -29,6 +29,10 @@ public class Person {
 	 	return _firstName;
 	 }
 
+	 public String getFullName() {
+	 	return getFirstName() + " " + getLastName();
+	 }
+
 	 public int getId() {
 	 	return _id;
 	 }

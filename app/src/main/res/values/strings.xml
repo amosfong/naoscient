@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">naoscient</string>
+	<string name="add_person">Add Person</string>
+	<string name="app_name">naoscient</string>
 </resources>
