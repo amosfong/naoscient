@@ -1,4 +1,7 @@
 <resources>
 	<string name="add_person">Add Person</string>
 	<string name="app_name">naoscient</string>
+	<string name="first_name">First Name</string>
+	<string name="last_name">Last Name</string>
+	<string name="there_was_an_unexpected_error">There was an unexpected error.</string>	
 </resources>

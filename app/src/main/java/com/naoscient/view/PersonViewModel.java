@@ -11,9 +11,12 @@ import com.naoscient.room.model.Person;
 
 import java.util.List;
 
+/**
+ * @author Amos Fong
+ */
 public class PersonViewModel extends AndroidViewModel {
 
-	public PersonViewModel (Application application) {
+	public PersonViewModel(Application application) {
 	   super(application);
 
 	   _personRepository = new PersonRepository(application);
@@ -21,7 +24,7 @@ public class PersonViewModel extends AndroidViewModel {
 	   _allPersons = _personRepository.getAllPersons();
 	}
 
-	public LiveData<List<Person>> getAllWords() {
+	public LiveData<List<Person>> getAllPersons() {
 		return _allPersons;
 	}
 
