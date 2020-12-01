@@ -14,7 +14,7 @@ public class PersonRepository {
 
 	public PersonRepository(Application application) {
 		PersonRoomDatabase personRoomDatabase = PersonRoomDatabase.getDatabase(
-            application);
+			application);
 
 		_personDao = personRoomDatabase.personDao();
 
@@ -28,13 +28,13 @@ public class PersonRepository {
 	public void insert(Person person) {
 		PersonRoomDatabase.databaseWriteExecutor.execute(
 			() -> {
-            	_personDao.insert(person);
+				_personDao.insert(person);
 			}
 		);
 	}
 
 	private PersonDao _personDao;
-	
+
 	private LiveData<List<Person>> _allPersons;
 
 }

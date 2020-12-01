@@ -10,8 +10,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.naoscient.R;
 
 class PersonViewHolder extends RecyclerView.ViewHolder {
-	
-	private final TextView _personTextView;
 
 	private PersonViewHolder(View itemView) {
 		super(itemView);
@@ -27,10 +25,12 @@ class PersonViewHolder extends RecyclerView.ViewHolder {
 		View view = LayoutInflater.from(
 			viewGroup.getContext()
 		).inflate(
-			R.layout.person_recycler_view_item, viewGroup, false
+			R.layout.people_view_item, viewGroup, false
 		);
 
 		return new PersonViewHolder(view);
 	}
+
+	private final TextView _personTextView;
 
 }

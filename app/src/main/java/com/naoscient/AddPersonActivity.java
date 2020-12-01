@@ -21,7 +21,7 @@ public class AddPersonActivity extends AppCompatActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.activity_add_person);
+		setContentView(R.layout.people_add_person_activity);
 
 		_firstNameEditText = findViewById(R.id.firstName);
 		_lastNameEditText = findViewById(R.id.lastName);
